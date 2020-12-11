@@ -16,7 +16,7 @@ TEST(JARVIS_ALGORITHM, PARLL_TEST) {
 		set = { {0, 0}, {1, 2}, {2, 1},  {4, 2},  {4, 3},
 			   {6, 0}, {5, 0}, {3, -2}, {2, -3}, {1, -1} };
 	}
-	std::vector<Point> hull = buildHull(set);
+	std::vector<Point> hull = buildHull(set);  
 
 	if (rank == 0) {
 		std::vector<Point> exp_hull{ {0, 0}, {1, 2}, {4, 3}, {6, 0}, {2, -3} };
