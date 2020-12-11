@@ -6,23 +6,23 @@
 #include <vector>
 
 struct Point {
- double x, y;
+double x, y;
 
- friend Point operator+(const Point& a, const Point& b);
- friend Point operator-(const Point& a, const Point& b) {
- return Point{ a.x - b.x, a.y - b.y };
- }
- friend bool operator!=(const Point& a, const Point& b) {
- return !(a == b);
- }
- friend bool operator==(const Point& a, const Point& b) {
- return (a.x == b.x) && (a.y == b.y);
- }
+friend Point operator+(const Point& a, const Point& b);
+friend Point operator-(const Point& a, const Point& b) {
+return Point{ a.x - b.x, a.y - b.y };
+}
+friend bool operator!=(const Point& a, const Point& b) {
+return !(a == b);
+}
+friend bool operator==(const Point& a, const Point& b) {
+return (a.x == b.x) && (a.y == b.y);
+}
 
- friend bool operator<(const Point& a, const Point& b) {
- return a.x < b.x;
- }
- };
+friend bool operator<(const Point& a, const Point& b) {
+return a.x < b.x;
+}
+};
 
 
 std::vector<Point> randomSet(int point_count);
