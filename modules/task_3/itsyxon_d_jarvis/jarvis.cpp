@@ -8,11 +8,11 @@
 #include <vector>
 
 double cross(const Point& a, const Point& b) {
- return (a.x * b.y) - (b.x * a.y);
+return (a.x * b.y) - (b.x * a.y);
 }
 
 bool is_counter_clockwise(const Point& p, const Point& i, const Point& q) {
- return cross(i - p, q - p) < 0;
+return cross(i - p, q - p) < 0;
 }
 
 Point find_leftmost_point(std::vector<Point>::iterator begin,
